@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <title>Survey Form</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="js/index.js"></script>
+<h1 id="title">Survey Form</h1>
+<p id="description">
+    This is a survey form for the FreeCodeCamp Survey Form Project.
+</p>
 
-    <!--
-    Hello Camper!
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-    - The freeCodeCamp Team
-    -->
-    <script src="js/index.js"></script>
-    <h1>Hello World, we are software developers!</h1>
-  </body>
+<form id="survey-form">
+    <label for="name">Name</label>
+    <input required id="name" type="text">
+
+    <label for="email">Email</label>
+    <input required id="email" type="email">
+
+    <label for="number">Number</label>
+    <input required id="number" type="number">
+</form>
+
+</body>
 </html>
