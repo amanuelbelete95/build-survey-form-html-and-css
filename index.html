@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
     <title>Survey Form</title>
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<script src="js/index.js"></script>
-<h1 id="title">Survey Form</h1>
-<p id="description">
-    This is a survey form for the FreeCodeCamp Survey Form Project.
-</p>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="js/index.js"></script>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      This is a survey form for the FreeCodeCamp Survey Form Project.
+    </p>
 
-<form id="survey-form">
-    <label for="name">Name</label>
-    <input required id="name" type="text">
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input required id="name" type="text" placeholder="name" />
 
-    <label for="email">Email</label>
-    <input required id="email" type="email">
+      <label for="email" id="email-label">Email</label>
+      <input required id="email" type="email" placeholder="email" />
 
-    <label for="number">Number</label>
-    <input required id="number" type="number">
-</form>
-
-</body>
+      <label for="number" id="number-label">Number</label>
+      <input
+        required
+        id="number"
+        type="number"
+        min="10"
+        max="1000"
+        placeholder="100"
+      />
+      <select id="dropdown">
+        <option value="India">India</option>
+        <option value="Ethiopia">Ethiopia</option>
+      </select>
+      <label for="male">male</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="female"> female</label>
+      <input type="radio" id="female" value="female" />
+      <label for="html">html-css skills</label>
+      <input type="checkbox" id="html" />
+      <label for="js">js skills</label>
+      <input id="js" type="checkbox" />
+      <textarea>Please provide additional infromation!</textarea>
+      <button type="submit" id="submit">submit</button>
+    </form>
+  </body>
 </html>
